@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TaX-Ig-fQ2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wfl-vi-7F2">
+            <objects>
+                <viewController id="TaX-Ig-fQ2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QwZ-XT-txm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCc-r5-79f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gci-N0-B76">
+                                        <rect key="frame" x="0.0" y="0.0" width="1242" height="852"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-Aa-H2T">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                                <connections>
+                                                    <segue destination="T86-Zg-go0" kind="embed" id="dEm-Zd-uYS"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Rk-V6U">
+                                                <rect key="frame" x="414" y="0.0" width="414" height="852"/>
+                                                <connections>
+                                                    <segue destination="ak7-q6-dlh" kind="embed" id="0cw-Q4-zXP"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMw-qI-eVD">
+                                                <rect key="frame" x="828" y="0.0" width="414" height="852"/>
+                                                <connections>
+                                                    <segue destination="FaH-G5-NZO" kind="embed" id="ETS-dr-eY9"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gci-N0-B76" firstAttribute="trailing" secondItem="wIN-kW-gPL" secondAttribute="trailing" id="139-N2-OAb"/>
+                                    <constraint firstItem="gci-N0-B76" firstAttribute="bottom" secondItem="wIN-kW-gPL" secondAttribute="bottom" id="5BG-Gm-ivx"/>
+                                    <constraint firstItem="hUU-Aa-H2T" firstAttribute="width" secondItem="spX-xc-wA8" secondAttribute="width" id="7Vj-2X-GE9"/>
+                                    <constraint firstItem="gci-N0-B76" firstAttribute="top" secondItem="wIN-kW-gPL" secondAttribute="top" id="MIK-aS-4l8"/>
+                                    <constraint firstItem="gci-N0-B76" firstAttribute="leading" secondItem="wIN-kW-gPL" secondAttribute="leading" id="RFf-60-mY1"/>
+                                    <constraint firstItem="gci-N0-B76" firstAttribute="height" secondItem="spX-xc-wA8" secondAttribute="height" id="aAN-OR-jrj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="wIN-kW-gPL"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="spX-xc-wA8"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hg9-iE-Gh6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvk-aA-Dzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1370.2290076335878" y="505.63380281690144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fa5-LR-bzJ">
+            <objects>
+                <viewController id="T86-Zg-go0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJU-h4-tJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="截圖 2024-02-28 下午6.58.42" translatesAutoresizingMaskIntoConstraints="NO" id="uXz-Yk-bFO">
+                                <rect key="frame" x="50" y="335" width="314" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="OUb-zG-ozf"/>
+                                    <constraint firstAttribute="height" constant="183" id="giq-8s-9Cg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rxl-Fz-tZl"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uXz-Yk-bFO" firstAttribute="top" secondItem="rxl-Fz-tZl" secondAttribute="top" constant="276" id="Jd0-WY-C0C"/>
+                            <constraint firstItem="uXz-Yk-bFO" firstAttribute="leading" secondItem="rxl-Fz-tZl" secondAttribute="leading" constant="50" id="KTy-YR-FTM"/>
+                            <constraint firstItem="rxl-Fz-tZl" firstAttribute="trailing" secondItem="uXz-Yk-bFO" secondAttribute="trailing" constant="50" id="trs-td-Hdn"/>
+                            <constraint firstItem="rxl-Fz-tZl" firstAttribute="bottom" secondItem="uXz-Yk-bFO" secondAttribute="bottom" constant="300" id="zZH-aZ-wws"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qir-1w-eTJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-267.17557251908397" y="791.54929577464793"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="6XR-dJ-rxL">
+            <objects>
+                <viewController id="ak7-q6-dlh" customClass="VideoViewController" customModule="tttt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="01B-0B-x32">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xzw-Al-hZG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="668-y3-Rh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="792"/>
+        </scene>
+        <!--Video2 View Controller-->
+        <scene sceneID="2ll-Kl-MxU">
+            <objects>
+                <viewController id="FaH-G5-NZO" customClass="Video2ViewController" customModule="tttt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhm-6c-Qw5" customClass="ㄒ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nZ5-cL-aLA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxT-Tq-OzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="792"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="截圖 2024-02-28 下午6.58.42" width="848" height="530"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
